@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=8.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <form name="calc">
+        <input type="text" readonly="readonly" id="visor02" />
+        <br />
+        <input type="text" name="visor" readonly="readonly" id="visor01" />
+        <br />
+        <input type="button" value="CE" onclick=" limpar2(); " />
+        <input type="button" value="C" onclick=" limpar(); "/>
+        <input type="button" value="&lArr;" />
+        <input type="button" value="&sol;" onclick=" botao( value ); " />
+        <br />
+        <input type="button" value="7" onclick=" botao( value ); " />
+        <input type="button" value="8" onclick=" botao( value ); " />
+        <input type="button" value="9" onclick=" botao( value ); " />
+        <input type="button" value="&times;" onclick="botao('*'); " />
+        <br />
+        <input type="button" value="4" onclick=" botao( value ); " />
+        <input type="button" value="5" onclick=" botao( value ); " />
+        <input type="button" value="6" onclick=" botao( value ); " />
+        <input type="button" value="&minus;" onclick=" botao('-');" />
+        <br />
+        <input type="button" value="3" onclick=" botao( value ); " />
+        <input type="button" value="2" onclick=" botao( value ); " />
+        <input type="button" value="1" onclick=" botao( value ); " />
+        <input type="button" value="&plus;" onclick=" botao( value ); " />
+        <br />
+        <input type="button" value="&plusmn;" />
+        <input type="button" value="0" onclick=" botao( value ); " />
+        <input type="button" value="&comma;" onclick=" botao('.'); " />
+        <input type="button" value="&equals;" onclick= "resultado();" />
+        <script type="text/javascript" src="Calculadora.js"></script>
+    </form>
+</body>
+
+</html>
